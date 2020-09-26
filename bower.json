@@ -1,0 +1,21 @@
+{
+  "name": "angularjscomponents",
+  "description": "Components with Angularjs",
+  "main": "index.html",
+  "authors": [
+    "gmiskos"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.3"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="psMovies">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body ng-cloak>
+    <div class="navbar navbar-default navbar-inverse container-fluid">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">At the movies!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <movie-list></movie-list>
+
+    </div>
+    
+<script src="bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+<script src="app/controllers/IndexController.js"></script>
+<script src="app/components/movie-list.components.js"></script>
+<script src="app/components/movie-rating.component.js"></script>
+</body>
+</html>
