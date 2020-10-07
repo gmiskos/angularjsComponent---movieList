@@ -27,6 +27,10 @@
             })
         }
 
+        vm.setRating = function(movie , newRating){
+            movie.imdbRating = newRating;
+        };
+
         vm.increaseRating = function(movie){
             if(movie.imdbRating<5)
                 movie.imdbRating += 1;
@@ -36,7 +40,7 @@
                 movie.imdbRating -= 1;
         };
         vm.goTo = function(id){
-            vm.$router.navigate(['Details', {id: id}])
+            vm.$router.navigate(['Details', {id: id}, 'Overview'])
         }
     }
 
