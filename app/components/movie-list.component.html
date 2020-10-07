@@ -4,6 +4,8 @@
         <th>Year</th>
         <th>Rated</th>
         <th></th>
+        <th>Details</th>
+        <th>Details Programmatically</th>
         <th>Poster</th>
     </tr>
     <tr ng-repeat="m in vm.movies track by $index">
@@ -11,6 +13,8 @@
         <td>{{m.Year}}</td>
         <td><movie-rating value="m.imdbRating"><span><i class="fas fa-star"></i></span></movie-rating></td>
         <td><button ng-click="vm.increaseRating(m)">+</button><button ng-click="vm.decreaseRating(m)">-</button></td>
+        <td><a ng-link="['Details', {id: m.id}]" class="btn btn-default"><span><i class="fas fa-search"></i></span></a></td>
+        <td><a ng-click="vm.goTo(m.id)" class="btn btn-default"><span><i class="fas fa-search"></i></span></a></td>
         <td><img width="200" height="150" ng-src="{{m.Images[0]}}" title="{{m.Title}}"></td>
     </tr>
 </table>

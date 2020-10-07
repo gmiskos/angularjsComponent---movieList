@@ -15,10 +15,13 @@
         
         vm.$onInit = function(){
             fetchMovies($http).then(function(movies){
+                let index = 1;
                 movies.forEach(element => {
                     if(element.imdbRating>5){
-                        element.imdbRating = 5;
+                        element.imdbRating = Math.floor(Math.random() * Math.floor(5));                        
                     }
+                    element.id = index;
+                    index++;
                 });
                 vm.movies = movies;
             })
@@ -32,11 +35,17 @@
             if(movie.imdbRating>0)
                 movie.imdbRating -= 1;
         };
+        vm.goTo = function(id){
+            vm.$router.navigate(['Details', {id: id}])
+        }
     }
 
     module.component(  "movieList" ,{
         templateUrl: "/app/components/movie-list.component.html",
         controllerAs: "vm",
-        controller: ["$http", Controller]
+        controller: ["$http", Controller],
+        bindings: {
+            "$router":"<"
+        }
     });
 }());

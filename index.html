@@ -10,24 +10,18 @@
     <title>Document</title>
 </head>
 <body ng-cloak>
-    <div class="navbar navbar-default navbar-inverse container-fluid">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">At the movies!</a>
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-
-        <movie-list></movie-list>
-
-    </div>
+  <movie-app></movie-app>
+    
     
 <script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-component-router/angular_1_router.js"></script>
 <script src="app.js"></script>
 <script src="app/controllers/IndexController.js"></script>
 <script src="app/components/movie-list.components.js"></script>
 <script src="app/components/movie-rating.component.js"></script>
+<script src="app/components/movie-details.component.js"></script>
+<script src="app/components/movie-app.component.js"></script>
+
 </body>
 </html>

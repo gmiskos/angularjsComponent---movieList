@@ -9,7 +9,20 @@
   "author": "gmiskos",
   "license": "ISC",
   "dependencies": {
+    "@angular/router": "^0.2.0",
     "@fortawesome/fontawesome-free": "^5.14.0",
-    "bower": "^1.8.8"
-  }
+    "bower": "^1.8.8",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmiskos/angularjsComponent---movieList.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gmiskos/angularjsComponent---movieList/issues"
+  },
+  "homepage": "https://github.com/gmiskos/angularjsComponent---movieList#readme"
 }
